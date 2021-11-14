@@ -5,39 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center_horizontal"
     android:layout_margin="30dp"
+    android:id="@+id/layout"
     >
+
+
     <Button
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:text="-"
         android:background="@drawable/buttonbackround"
-        >
+        android:textSize="30sp"
+        android:id="@+id/btn_minusz"
+        />
 
-    </Button>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
         android:textSize="30sp"
-        >
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:id="@+id/betu"
+        android:textColor="@color/red"
+        />
 
-
-    </TextView>
     <Button
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:text="+"
         android:background="@drawable/buttonbackround"
-        >
+android:textSize="30sp"
+        android:id="@+id/btn_plusz"
+        />
 
-    </Button>
+
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Tippel"
+        android:id="@+id/btn_tipp"
+/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/akasztofa00"
+        android:id="@+id/img"
+
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_____"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:letterSpacing="0.3"
+        android:id="@+id/megoldas"/>
+
 
 </LinearLayout>
 
